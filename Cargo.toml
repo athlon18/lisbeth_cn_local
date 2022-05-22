@@ -1,0 +1,10 @@
+[package]
+name = "lisbeth_cn_local"
+version = "0.1.0"
+authors = ["athlon"]
+edition = "2021"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+quick-protobuf = "0.8.0"
+rusqlite = { version = "0.27.0", features = ["bundled"] }
