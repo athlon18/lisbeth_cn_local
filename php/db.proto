@@ -1,0 +1,115 @@
+syntax = "proto3";
+
+package template;
+option go_package = "./proto";
+
+message DB {
+  repeated bytes Items = 1;
+  repeated bytes JobCategories = 2;
+  repeated bytes Masterpieces = 3;
+  repeated bytes CraftLevelDifferences = 4;
+  repeated bytes Currencies = 5;
+  repeated bytes Books = 6;
+  repeated bytes Areas = 7;
+  repeated bytes Aetherytes = 8;
+  repeated bytes RouterPaths = 9;
+  repeated bytes GatherSpots = 10;
+  repeated bytes EphemeralSpots = 11;
+  repeated bytes UnspoiledSpots = 12;
+  repeated bytes GrindSpots = 13;
+  repeated bytes Recipes = 14;
+  repeated bytes Npcs = 15;
+  repeated bytes FishingEntries = 16;
+  repeated bytes Shops = 17;
+  repeated bytes Reputations = 18;
+  repeated bytes GatherSkills = 19;
+  repeated bytes FishingSpots = 20;
+  repeated bytes Leves = 21;
+  repeated TranslationMaps TranslationMaps = 22;
+  repeated bytes Weather = 23;
+  repeated bytes LevelingBlocks = 24;
+  repeated bytes Mounts = 25;
+  repeated bytes FishingRecords = 26;
+  repeated bytes DiademSearchpointCircuit = 27;
+  repeated bytes ResourceApprovals = 28;
+  bytes SummoningBellIds = 29;
+  repeated bytes RetainerNames = 30;
+  repeated bytes DiademSpots = 31;
+  repeated bytes Quests = 32;
+  repeated bytes CircuitSpots = 33;
+  repeated bytes SextantZoneHeaders = 34;
+  repeated bytes Landpoints = 35;
+  repeated bytes Materia = 36;
+  repeated bytes Consumables = 37;
+  repeated bytes ItemSeries = 38;
+  repeated bytes DiademMobs = 39;
+  bytes TreasureMaps = 40;
+  bytes IshgardPoints = 41;
+
+}
+message TranslationMaps{
+  Language Language = 1;
+  map<string, string> KeyToName = 2;
+}
+
+message WriteDB {
+  repeated bytes Items = 1;
+  repeated bytes JobCategories = 2;
+  repeated bytes Masterpieces = 3;
+  repeated bytes CraftLevelDifferences = 4;
+  repeated bytes Currencies = 5;
+  repeated bytes Books = 6;
+  repeated bytes Areas = 7;
+  repeated bytes Aetherytes = 8;
+  repeated bytes RouterPaths = 9;
+  repeated bytes GatherSpots = 10;
+  repeated bytes EphemeralSpots = 11;
+  repeated bytes UnspoiledSpots = 12;
+  repeated bytes GrindSpots = 13;
+  repeated bytes Recipes = 14;
+  repeated bytes Npcs = 15;
+  repeated bytes FishingEntries = 16;
+  repeated bytes Shops = 17;
+  repeated bytes Reputations = 18;
+  repeated bytes GatherSkills = 19;
+  repeated bytes FishingSpots = 20;
+  repeated bytes Leves = 21;
+  repeated WriteTranslationMaps TranslationMaps = 22;
+  repeated bytes Weather = 23;
+  repeated bytes LevelingBlocks = 24;
+  repeated bytes Mounts = 25;
+  repeated bytes FishingRecords = 26;
+  repeated bytes DiademSearchpointCircuit = 27;
+  repeated bytes ResourceApprovals = 28;
+  bytes SummoningBellIds = 29;
+  repeated bytes RetainerNames = 30;
+  repeated bytes DiademSpots = 31;
+  repeated bytes Quests = 32;
+  repeated bytes CircuitSpots = 33;
+  repeated bytes SextantZoneHeaders = 34;
+  repeated bytes Landpoints = 35;
+  repeated bytes Materia = 36;
+  repeated bytes Consumables = 37;
+  repeated bytes ItemSeries = 38;
+  repeated bytes DiademMobs = 39;
+  bytes TreasureMaps = 40;
+  bytes IshgardPoints = 41;
+
+}
+message WriteTranslationMaps{
+  Language Language = 1;
+  bytes KeyToName = 2;
+}
+
+enum Language{
+  // Token: 0x04001AFD RID: 6909
+  English = 0;
+  // Token: 0x04001AFE RID: 6910
+  Chinese = 1;
+  // Token: 0x04001AFF RID: 6911
+  Japanese = 2;
+  // Token: 0x04001B00 RID: 6912
+  German = 3;
+  // Token: 0x04001B01 RID: 6913
+  French = 4;
+}

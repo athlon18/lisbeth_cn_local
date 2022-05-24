@@ -1,0 +1,12 @@
+{
+    "require": {
+        "google/protobuf": "^3.20",
+        "ext-sqlite3": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "GPBMetadata\\": "GPBMetadata/",
+            "Template\\": "Template/"
+        }
+    }
+}
